@@ -3,7 +3,7 @@
  */
 package com.guendouz.spider.examples;
 
-import com.guendouz.spider.DmozSpider;
+import com.guendouz.spider.YahooSpider;
 
 /**
  * @author Guendouz
@@ -17,7 +17,7 @@ public class Demo {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		DmozSpider spider = new DmozSpider();
+		YahooSpider spider = new YahooSpider();
 		System.out.println(spider.fetch(DMOZ_LINK).size());
 		spider.download(DMOZ_LINK, "dmoz_links.txt");
 
