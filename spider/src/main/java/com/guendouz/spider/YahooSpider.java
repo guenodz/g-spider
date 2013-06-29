@@ -13,10 +13,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 /**
- * @author Guendouz Mohamed
- * 
- *         YahooSpider fetch links from an Yahoo Directory.
- * 
+ * YahooSpider fetch links from an Yahoo Directory.
  */
 public class YahooSpider extends DefaultSpider {
 
@@ -26,7 +23,7 @@ public class YahooSpider extends DefaultSpider {
 		Document doc;
 		try {
 			doc = Jsoup.connect(url).get();
-			Elements urls = doc.select("div.st ul li a");
+			Elements urls = doc.select("div.st ul li a:not(a:has(b))");
 
 			for (Element link : urls)
 				result.add(link.attr("href"));

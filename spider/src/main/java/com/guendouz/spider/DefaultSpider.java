@@ -15,17 +15,15 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 /**
- * @author Guendouz Mohamed
- * 
- *         a Default implementation of a Spider functions.
- * 
+ * a Default implementation of a Spider functions.
  */
 public class DefaultSpider {
 
-	/*
+	/**
 	 * fetch all links from a page and save them to a List object.
 	 * 
-	 * @param url the page url.
+	 * @param url
+	 *            the page url.
 	 * 
 	 * @return a List object containing all the links in a page.
 	 */
@@ -46,13 +44,15 @@ public class DefaultSpider {
 		return result;
 	}
 
-	/*
+	/**
 	 * fetch and download all links from a page and save them to a file use this
 	 * method if you have to save the result of fetch method to a local file.
 	 * 
-	 * @param url the page url.
+	 * @param url
+	 *            the page url.
 	 * 
-	 * @param filename the file name
+	 * @param filename
+	 *            the file name
 	 */
 	public void download(String url, String filename) {
 		BufferedWriter writer;

@@ -13,10 +13,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 /**
- * @author Guendouz Mohamed
- * 
- *         DmozSpider fetch links from an Dmoz.org directory.
- * 
+ * DmozSpider fetch links from an Dmoz.org directory.
  */
 public class DmozSpider extends DefaultSpider {
 

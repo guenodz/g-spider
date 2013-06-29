@@ -6,7 +6,7 @@ package com.guendouz.spider.examples;
 import com.guendouz.spider.YahooSpider;
 
 /**
- * @author Guendouz
+ * @author Guendouz Mohamed
  * 
  */
 public class Demo {
